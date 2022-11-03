@@ -1,0 +1,234 @@
+<html lang="tr">
+
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/slider.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+
+
+<body >
+
+<script src="js/index.js"></script>
+
+
+
+
+<header>
+
+<div class="navbar">
+    
+  <ul>
+    <li><img class="logo" src="img/logo.png"></li>
+
+      <li  class="category"><i class="fa fa-bars"></i> <span class="navbar-text">Kategoriler</span></li>
+      <li class="navbar-search">
+          <input type="text" class="search-input">
+          <span class="spansearch"><i class="fas fa-search"></i> Ürün ara</span>
+      </li>
+      <div class="float-end">
+      <li ><span class="navbar-text">Üyelik </span>  <span class="navbar-icon "> <i class="fas fa-user fa-lg"> </i> </span></li>
+      <li class="navbar-basket"><span class="basket-count" id="basket-item-count"></span><span class="navbar-text">Sepetim </span> <span class="navbar-icon"> <i class="fas fa-shopping-cart fa-lg "> </i> </span>      
+      </li>
+      </div>
+  </ul>
+</div>
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/main-slider-2.PNG"></div>
+            <div class="swiper-slide"><img src="img/main-slider-1.PNG"></div>
+            <div class="swiper-slide"><img src="img/main-slider-2.PNG"></div>
+            <div class="swiper-slide"><img src="img/main-slider.3.PNG"></div>
+            <div class="swiper-slide"><img src="img/main-slider-1.PNG"></div>
+            <div class="swiper-slide"><img src="img/main-slider-2.PNG"></div>
+            <div class="swiper-slide"><img src="img/main-slider.3.PNG"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev main-swiper-button-prev"><i class="fas fa-caret-left"></i></div>
+        <div class="swiper-button-next main-swiper-button-next"><i class="fas fa-caret-right"></i></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 2,
+        loopFillGroupWithBlank: false,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+                    },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView:3,
+            spaceBetween: 10,
+          },
+        },
+      });
+      </script>      
+</header>
+
+<div class="container">
+
+
+<!-- ÖNE ÇIKAN ÜRÜNLER   -->
+<p class="text-2">TÜM ÖNE ÇIKANLAR <i class="fal fa-long-arrow-right"></i></p>
+
+  <p class="text">Öne Çıkan Ürünler</p>
+<div class="product-list" id="product-list">
+
+
+
+
+</div>   
+
+</div>
+<!-- ÖNE ÇIKAN ÜRÜNLER END  -->
+
+
+
+<!-- ÇOK SATANLAR -->
+<div class="container">
+<p class="text-2">TÜM ÇOK SATANLAR <i class="fal fa-long-arrow-right"></i></p>
+<div class="swiper-button-prev swiper-button-prev2" style="position:absolute;top:30%;left:-70px;"><i class="fas fa-caret-left"></i></div>
+<div class="swiper-button-next swiper-button-next2" style="position:absolute;top:30%;right:-70px;"><i class="fas fa-caret-right"></i></div>
+<p class="text">Çok Satanlar</p>
+      <!-- Swiper -->
+      <div class="swiper swiper2 mySwiper2">
+        <div class="swiper-wrapper" id="swiper-list">
+
+
+          
+        </div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="js/slide.js"></script>
+
+
+
+    
+
+</div>
+<!-- ÇOK SATANLAR END -->
+
+
+
+
+
+<footer>
+    <div class="footer">
+    
+    <div class="footer-head">
+    <div class="column">
+     <p>KURUMSAL</p>
+      <ul>
+      <li>Hakkımızda</li>
+      <li>Müşteri Hizmetleri</li>
+      <li>Sipariş Aşamaları</li>
+      <li>Sıkça Sorulan Sorular</li>
+      <li>İnsan Kaynakları</li>
+      <li>Gizlilik Politikamız</li>
+    </ul>
+    </div>
+    <div class="column">
+      <br>
+      <br>
+    <ul>
+      <li>İletişim</li>
+      <li>Vatan Card</li>
+      <li>Servis Takip Formu</li>
+      <li>Mağazalar</li>
+      <li>İşlem Rehberi</li>
+    </ul>
+    </div>
+    <div class="column">
+      <p>KATEGORİLER</p>
+    <ul>
+      <li>Bilgisayar</li>
+      <li>Cep Telefonu</li>
+      <li>Tablet PC</li>
+      <li>Akıllı Saat</li>
+      <li>Vestel TV</li>
+      <li>Oyun Bilgisayarı</li>
+    </ul>
+    </div>
+    <div class="column">
+      <br>
+      <br>
+    <ul>
+      <li>Küçük Ev Aletleri</li>
+      <li>Kişisel Bakım Ürünleri</li>
+      <li>Elektrikli Süpürge</li>
+      <li>Ütü</li>
+      <li>Masaüstü Bilgisayar</li>
+      <li>Sabit Diskler</li>
+    </ul>
+    
+    </div>
+    <div class="column">
+      <p>ÖZEL ÜRÜNLER</p>
+    <ul>
+      <li>İphone 7</li>
+      <li>İphone 6S</li>
+      <li>İphone 5S</li>
+      <li>İphone SE</li>
+      <li>General Mobile 5 Plus</li>
+      <li>Galaxy S7</li>
+      <li>Note 5</li>
+      <li>Galaxy S6</li>
+    
+    </ul>
+    </div>
+    </div>
+    
+    
+    <hr>
+    
+    <div class="footer-end">
+      
+     <div class="footer-end-left"> 
+    <p style="font-weight:bold">Türkiye'nin Teknoloji Hiperstoru</p>
+    <p>Copyright 2016 Vatan Bilgisayar San. Ve Tic Aş.</p>
+    </div>
+    <div class="footer-end-right"> 
+      <img src="img/footer.png">
+    </div>
+    </div>
+
+
+</body>
+
+
+
+</html>
